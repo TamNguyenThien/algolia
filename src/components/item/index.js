@@ -3,6 +3,7 @@ import Home from '../Home'
 import { Link } from 'react-router-dom'
 export default function Item (props) {
   const { Items } = props
+  console.log(Items, 'data1')
   const { point } = Items
   const [showDetail, setShowDetail] = useState(false)
   const handleShow = () => {

@@ -8,13 +8,10 @@ import { FaAlignRight } from 'react-icons/fa'
 import './App.scss'
 import { Route, Switch, Link } from 'react-router-dom'
 import DetailItem from './components/item/detailItem'
-import { Select } from 'antd'
-
-const { Option } = Select
 
 export default function App () {
   const [valueSearch, setValueSearch] = useState('')
-  console.log(Items)
+  console.log(Items, 'data')
 
   const [data, setData] = useState(Items)
   const handleSearch = (search) => {
@@ -69,13 +66,14 @@ export default function App () {
         </select>
         <div style={{ marginRight: 10 }}>For</div>
         <select name='cars' id='cars'>
-          <option value='All time'>All time</option>
+          <option value='All'>All</option>
           <option value='mercedes'>Mercedes</option>
           <option value='audi'>Audi</option>
         </select>
       </div>
       <Switch>
         <Route exact path='/' component={() => <Item Items={data} />} />
+        <Route exact path='/LayoutAlgolia' component={() => <Item Items={data} />} />
         <Route exact path='/item/:point' component={DetailItem} />
       </Switch>
       {/* <Item Items={data} /> */}
