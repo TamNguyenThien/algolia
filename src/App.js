@@ -61,13 +61,11 @@ export default function App () {
         <div style={{ marginRight: 10 }}>By</div>
         <select name='cars' id='cars' style={{marginRight: 10}}>
           <option value='Popularity'>Popularity</option>
-          <option value='saab'>Saab</option>
           <option value='mercedes'>Mercedes</option>
         </select>
         <div style={{ marginRight: 10 }}>For</div>
         <select name='cars' id='cars'>
           <option value='All'>All</option>
-          <option value='mercedes'>Mercedes</option>
           <option value='audi'>Audi</option>
         </select>
       </div>
