@@ -57,20 +57,19 @@ export default function App () {
       <div style={{ display: 'flex', margin: '10px 10px' }}>
         <div style={{ marginRight: 10 }}>Search</div>
         <select name='cars' id='cars' style={{marginRight: 10}}>
-          <option value='volvo'>Volvo</option>
+          <option value='Stories'>Stories</option>
           <option value='saab'>Saab</option>
-          <option value='mercedes'>Mercedes</option>
           <option value='audi'>Audi</option>
         </select>
         <div style={{ marginRight: 10 }}>By</div>
         <select name='cars' id='cars' style={{marginRight: 10}}>
-          <option value='volvo'>Volvo</option>
+          <option value='Popularity'>Popularity</option>
           <option value='saab'>Saab</option>
           <option value='mercedes'>Mercedes</option>
         </select>
         <div style={{ marginRight: 10 }}>For</div>
         <select name='cars' id='cars'>
-          <option value='volvo'>Volvo</option>
+          <option value='All time'>All time</option>
           <option value='mercedes'>Mercedes</option>
           <option value='audi'>Audi</option>
         </select>
