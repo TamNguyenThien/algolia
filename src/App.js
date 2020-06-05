@@ -71,7 +71,7 @@ export default function App () {
       </div>
       <Switch>
         <Route exact path='/' component={() => <Item Items={data} />} />
-        <Route exact path='/LayoutAlgolia' component={() => <Item Items={data} />} />
+        <Route exact path='/algolia' component={() => <Item Items={data} />} />
         <Route exact path='/item/:point' component={DetailItem} />
       </Switch>
       {/* <Item Items={data} /> */}
